@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Sprouts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar Container */
+    nav {
+      background-color: #2d3748; /* Equivalent to bg-gray-800 */
+      position: relative;
+      height: 10%;
+      width:95%;
+      position:fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    /* Logo */
+    .logo img {
+      height: 100px;
+    }
+    /* Desktop Links */
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+    .nav-links a {
+      color: #d1d5db; /* Equivalent to text-gray-300 */
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 4px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-links a:hover {
+      background-color: #4a5568; /* Equivalent to hover:bg-gray-700 */
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .nav-links a.active {
+      background-color: #1a202c; /* Equivalent to bg-gray-900 */
+      color: white;
+    }
+    /* Notifications & Profile */
+    .actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .active{
+            background-color: #007bff; /* Change background color for Home */
+            border-radius: 5px; /* Add rounded corners */
+            font-weight: bold; /* Make it bold */
+    }
+    .notification-btn, .profile-btn {
+      background: none;
+      border: none;
+      color: #d1d5db;
+      cursor: pointer;
+    }
+
+    .profile-btn img {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+    }
+    .container {
+        width: 50%;
+        padding-top:10%;
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+        h2 {
+            margin: 0 0 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"], input[type="time"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="SKILL_SPROUTS-logo.png" alt="Your Company">
+    </div>
+
+    <!-- Links for Desktop -->
+    <div class="nav-links">
+      <a href="navbar.html" >Dashboard</a>
+      <a href="tutor.html">Tutors</a>
+      <a href="courses.html"  class="active">Courses</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <!-- Actions (Notifications, Profile) -->
+    <div class="actions">
+      <button class="profile-btn">
+        <a href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFvYAOIBmCFcs_AdazOqMyE5cmOcdCK6TXNA&s" alt="Profile">
+      </a>
+      </button>
+    </div>
+  </nav>
+  <div class="container"></div>
+    <h2>Application Form</h2>
+        <label for="subject">Subject Needed:</label>
+        <input type="text" id="subject" name="subject" required>
+
+        <label for="mode">Mode of Tutoring:</label>
+        <input type="checkbox" id="online" name="mode" value="Online">
+        <label for="online">Online</label>
+        <input type="checkbox" id="offline" name="mode" value="Offline">
+        <label for="offline">Offline</label>
+
+        <label for="timeSlot">Preferred Time Slot:</label>
+        <select id="timeSlot" name="timeSlot" required>
+            <option value="">Select a time slot</option>
+            <option value="9:00-10:00 AM">9:00-10:00 AM</option>
+            <option value="10:00-11:00 AM">10:00-11:00 AM</option>
+            <option value="11:00-12:00 PM">11:00-12:00 PM</option>
+            <option value="1:00-2:00 PM">1:00-2:00 PM</option>
+            <option value="2:00-3:00 PM">2:00-3:00 PM</option>
+            <option value="3:00-4:00 PM">3:00-4:00 PM</option>
+        </select>
+
+        <button type="submit">Submit Application</button>
+</div>
+</body>
+</html>

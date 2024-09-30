@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Sprouts</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color:rgb(71, 76, 84);
+    }
+
+    /* Navbar Container */
+    nav {
+      background-color: #2d3748; /* Equivalent to bg-gray-800 */
+      position: relative;
+      height: 10%;
+      width:95%;
+      position:fixed;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    /* Logo */
+    .logo img {
+      height: 100px;
+    }
+    /* Desktop Links */
+    .nav-links {
+      display: flex;
+      gap: 15px;
+    }
+    .nav-links a {
+      color: #d1d5db; /* Equivalent to text-gray-300 */
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 4px;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .nav-links a:hover {
+      background-color: #4a5568; /* Equivalent to hover:bg-gray-700 */
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .nav-links a.active {
+      background-color: #1a202c; /* Equivalent to bg-gray-900 */
+      color: white;
+    }
+    /* Notifications & Profile */
+    .actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .active{
+            background-color: #007bff; /* Change background color for Home */
+            border-radius: 5px; /* Add rounded corners */
+            font-weight: bold; /* Make it bold */
+    }
+    .notification-btn, .profile-btn {
+      background: none;
+      border: none;
+      color: #d1d5db;
+      cursor: pointer;
+    }
+
+    .profile-btn img {
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 10%;
+        padding:10%
+    }
+
+    .card {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 15px;
+        width: 80%;
+        text-align: center;
+    }
+
+    .card h3 {
+        margin: 10px 0;
+    }
+
+    .card p {
+        margin: 5px 0;
+        color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <!-- Logo -->
+    <div class="logo">
+      <img src="SKILL_SPROUTS-logo.png" alt="Your Company">
+    </div>
+
+    <!-- Links for Desktop -->
+    <div class="nav-links">
+      <a href="navbar.html" >Dashboard</a>
+      <a href="dashboard.html" class="active">Tutors</a>
+      <a href="courses.html">Courses</a>
+      <a href="#">Contact us</a>
+    </div>
+
+    <!-- Actions (Notifications, Profile) -->
+    <div class="actions">
+      <button class="profile-btn">
+        <a href="#">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFvYAOIBmCFcs_AdazOqMyE5cmOcdCK6TXNA&s" alt="Profile">
+      </a>
+      </button>
+    </div>
+  </nav>
+<div class="container">
+  <div class="card">
+      <h3>ABC</h3>
+      <p>Subject: Mathematics</p>
+      <p>City:Warangal</p>
+  </div>
+
+  <div class="card">
+      <h3>ABC</h3>
+      <p>Subject: Science</p>
+      <p>City:Hanamkonda</p>
+  </div>
+
+  <div class="card">
+      <h3>ABC</h3>
+      <p>Subject: English</p>
+      <p>City:Kazipet</p>
+  </div>
+
+  <div class="card">
+      <h3>ABC</h3>
+      <p>Subject: History</p>
+      <p>City: Hanamkonda</p>
+  </div>
+
+  <div class="card">
+      <h3>ABC</h3>
+      <p>Subject: Physics</p>
+      <p>City: Kazipet</p>
+  </div>
+
+  <div class="card">
+      <h3>ABC</h3>
+      <p>Subject: Chemistry</p>
+      <p>City: Warangal</p>
+  </div>
+</div>
+</body>
+</html>
